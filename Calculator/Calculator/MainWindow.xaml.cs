@@ -23,6 +23,15 @@ namespace Calculator
         private readonly ICalculator _calculator;
         private string  arg1, arg2;
 
+        private bool CheckInt(string str)
+        {
+            int number;
+            bool ok;
+            ok= int.TryParse(str, out number);
+            ok = ok&&(number > -100 && number < 100);
+            return ok;
+        }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -42,6 +51,12 @@ namespace Calculator
         private void Argument2TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             arg2 = Argument2TextBox.Text;
+            if (!CheckInt(arg2))
+            {
+                MessageBox.Show("Error");
+                arg2 = "";
+                Argument2TextBox.Clear();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -75,6 +90,13 @@ namespace Calculator
         private void Argument1TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             arg1 = Argument1TextBox.Text;
+
+            if (!CheckInt(arg1))
+            {
+                MessageBox.Show("Error");
+                arg1 = "";
+                Argument1TextBox.Clear();
+            }
         }
     }
 }
