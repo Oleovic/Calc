@@ -36,9 +36,9 @@ namespace Calculator
         {
             InitializeComponent();
             _calculator = new Calc();
-            Argument1TextBox.Clear();
-            Argument1TextBox.Focus();
-            Argument2TextBox.Clear();
+            //Argument1TextBox.Clear();
+           Argument1TextBox.Focus();
+            //Argument2TextBox.Clear();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -53,7 +53,7 @@ namespace Calculator
             arg2 = Argument2TextBox.Text;
             if (!CheckInt(arg2))
             {
-                MessageBox.Show("Error");
+         //      MessageBox.Show("Error");
                 arg2 = "";
                 Argument2TextBox.Clear();
             }
@@ -93,7 +93,7 @@ namespace Calculator
 
             if (!CheckInt(arg1))
             {
-                MessageBox.Show("Error");
+               // MessageBox.Show("Error");
                 arg1 = "";
                 Argument1TextBox.Clear();
             }
