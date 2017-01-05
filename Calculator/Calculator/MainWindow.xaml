@@ -10,7 +10,7 @@
         <StackPanel Orientation="Vertical">
             <StackPanel Orientation="Horizontal" Margin="15">
                 <TextBox x:Name="Argument1TextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"
-                         Text="TextBox" VerticalAlignment="Top" Width="120" />
+                         Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="Argument1TextBox_TextChanged" />
                 <TextBlock x:Name="OperatorTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="?"
                            Width="10"
                            TextAlignment="Center"
@@ -18,14 +18,14 @@
                            VerticalAlignment="Top" />
 
                 <TextBox x:Name="Argument2TextBox" HorizontalAlignment="Left" Height="23"
-                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" />
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="Argument2TextBox_TextChanged" />
                 <TextBlock x:Name="EqualsTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="="
                            VerticalAlignment="Top" Margin="10,0,10,0" />
                 <TextBlock x:Name="ResulTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap"
                            Text="Result" VerticalAlignment="Top" />
             </StackPanel>
-            <Button Content="Add" Width="200" Margin="5"></Button>
-            <Button Content="Subtract" Width="200" Margin="5"></Button>
+            <Button Content="Add" Width="200" Margin="5" Click="Button_Click"></Button>
+            <Button Content="Subtract" Width="200" Margin="5" Click="Button_Click_1"></Button>
             <Button Content="Multiply" Width="200" Margin="5"></Button>
             <Button Content="Div" Width="200" Margin="5"></Button>
             <Button Content="Mod" Width="200" Margin="5"></Button>
