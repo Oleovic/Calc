@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Margin="15">
+                <TextBox x:Name="Argument1TextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"
+                         Text="TextBox" VerticalAlignment="Top" Width="120" />
+                <TextBlock x:Name="OperatorTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="?"
+                           Width="10"
+                           TextAlignment="Center"
+                           Margin="10,0,10,0"
+                           VerticalAlignment="Top" />
+
+                <TextBox x:Name="Argument2TextBox" HorizontalAlignment="Left" Height="23"
+                         TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" />
+                <TextBlock x:Name="EqualsTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="="
+                           VerticalAlignment="Top" Margin="10,0,10,0" />
+                <TextBlock x:Name="ResulTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap"
+                           Text="Result" VerticalAlignment="Top" />
+            </StackPanel>
+            <Button Content="Add" Width="200" Margin="5"></Button>
+            <Button Content="Subtract" Width="200" Margin="5"></Button>
+            <Button Content="Multiply" Width="200" Margin="5"></Button>
+            <Button Content="Div" Width="200" Margin="5"></Button>
+            <Button Content="Mod" Width="200" Margin="5"></Button>
+        </StackPanel>
     </Grid>
 </Window>
