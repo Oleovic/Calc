@@ -51,6 +51,13 @@ namespace Calculator
             ResulTextBlock.Text = _calculator.Sub(ax, ay).ToString();
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var ax = int.Parse(arg1);
+            var ay = int.Parse(arg2);
+            ResulTextBlock.Text = _calculator.Mult(ax, ay).ToString();
+        }
+
         private void Argument1TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             arg1 = Argument1TextBox.Text;

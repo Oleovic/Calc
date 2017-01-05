@@ -26,7 +26,7 @@
             </StackPanel>
             <Button Content="Add" Width="200" Margin="5" Click="Button_Click"></Button>
             <Button Content="Subtract" Width="200" Margin="5" Click="Button_Click_1"></Button>
-            <Button Content="Multiply" Width="200" Margin="5"></Button>
+            <Button Content="Multiply" Width="200" Margin="5" Click="Button_Click_2"></Button>
             <Button Content="Div" Width="200" Margin="5"></Button>
             <Button Content="Mod" Width="200" Margin="5"></Button>
         </StackPanel>
